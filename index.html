@@ -59,7 +59,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -538,5 +538,21 @@
         </div>
       </div>
     </footer>
+
+    <!--Модальное окно - Заказать услугу  -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque et necessitatibus fuga
+          enim officia, tempora quibusdam totam laudantium perferendis nam ipsa harum nisi incidunt.
+          Totam impedit dolores distinctio vero! Perspiciatis, necessitatibus rem nobis iure
+          deserunt ducimus omnis dignissimos! Culpa cupiditate modi commodi voluptatem blanditiis
+          facilis vitae odit rem, exercitationem hic.
+        </p>
+        <button class="button" type="button" data-modal-close>Закрыть</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
