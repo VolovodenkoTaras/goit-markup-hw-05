@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WEB Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -24,7 +24,9 @@
 
           <ul class="site-nav list">
             <li class="item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+            <li class="item current">
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
             <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
@@ -65,12 +67,19 @@
 
           <ul class="portfolio-projects list">
             <li class="item">
-              <img
-                class="photo-portfolio"
-                src="./images/portfolio1.jpg"
-                alt="Технокряк"
-                width="370"
-              />
+              <div class="portfolio-projects-thumb">
+                <img
+                  class="photo-portfolio"
+                  src="./images/portfolio1.jpg"
+                  alt="Технокряк"
+                  width="370"
+                />
+                <p class="portfolio-overlay-text">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном
+                  лице.
+                </p>
+              </div>
               <div class="portfolio-description">
                 <h2 class="title">Технокряк</h2>
                 <p class="text">Веб-сайт</p>

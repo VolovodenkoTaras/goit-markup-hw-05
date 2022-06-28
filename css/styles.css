@@ -12,6 +12,8 @@
   --header-border-bottom-color: #ececec;
   --portfolio-project-border: #eeeeee;
   --clients-primary-color: #afb1b8;
+  --work-text-bg-color: rgba(47, 48, 58, 0.8);
+  --portfolio-overlay-text-bg-color: rgba(33, 150, 243, 0.9);
 
   --portfolio-projects-gap: 30px;
 }
@@ -146,6 +148,21 @@ img {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+/*Cделано подчёркивание ссылки текущей страницы (на которой сейчас находится пользователь) начало*/
+.site-nav .item.current {
+  position: relative;
+}
+
+.site-nav > .item.current::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contacts-header {
@@ -372,6 +389,27 @@ img {
 
 .work > .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.work .work-thumb {
+  position: relative;
+}
+
+.work .work-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+  background-color: var(--work-text-bg-color);
+
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* Вместо этого - Техника отзывчивых изображений
@@ -667,6 +705,34 @@ img {
   margin-bottom: 0;
 } 
 */
+
+.portfolio-projects-thumb {
+  position: relative;
+}
+
+.portfolio-overlay-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--primary-white-color);
+  background-color: var(--portfolio-overlay-text-bg-color);
+
+  padding: 63px 24px;
+
+  opacity: 0;
+}
+
+.portfolio-overlay-text:hover,
+.portfolio-overlay-text:focus {
+  opacity: 1;
+}
 
 .portfolio-description {
   padding: 20px 24px;
