@@ -15,6 +15,7 @@
   --work-text-bg-color: rgba(47, 48, 58, 0.8);
   --portfolio-overlay-text-bg-color: rgba(33, 150, 243, 0.9);
   --modal-window-bg-color: rgba(0, 0, 0, 0.2);
+  --modal-window-close-border-color: rgba(0, 0, 0, 0.1);
 
   --portfolio-projects-gap: 30px;
 
@@ -315,6 +316,27 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   padding: 8px;
+}
+
+.button.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--modal-window-close-border-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-close-modal {
+  width: 18px;
+  height: 18px;
 }
 
 /* Секции */
