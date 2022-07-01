@@ -28,7 +28,7 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
 }
 
 /* ОБЩЕЕ */
@@ -108,7 +108,7 @@ img {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(35.96 / 26);
 }
 
 .header-logo {
@@ -198,7 +198,7 @@ img {
 
   font-weight: 500;
   letter-spacing: 0.02em;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   transition: color 250ms var(--cubic);
@@ -254,6 +254,7 @@ img {
 /* Герой */
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-bg-color);
@@ -272,7 +273,7 @@ img {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -287,7 +288,7 @@ img {
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
 
   display: inline-block;
@@ -385,7 +386,7 @@ img {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42.19 / 36);
   text-align: center;
 
   margin-top: 0;
@@ -454,14 +455,15 @@ img {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16.41 / 14);
   text-transform: uppercase;
 
   margin-bottom: 10px;
 }
 
 .features .text {
-  line-height: 1.71;
+  font-size: 14px;
+  line-height: calc(24 / 14);
 }
 
 /* Чем мы занимаемся */
@@ -489,7 +491,7 @@ img {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16.41 / 14);
   color: var(--primary-white-color);
   background-color: var(--work-text-bg-color);
 
@@ -531,14 +533,14 @@ img {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(18.75 / 16);
 
   margin-bottom: 10px;
 }
 
 .team .text {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(18.75 / 16);
 
   margin-bottom: 16px;
 }
@@ -663,7 +665,7 @@ img {
 .contacts-footer .location {
   color: var(--primary-white-color);
   font-style: normal;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
 
   transition: color 250ms var(--cubic);
 }
@@ -671,7 +673,7 @@ img {
 .contacts-footer .contacts {
   color: var(--contacts-ft-color);
   font-style: normal;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
 
   transition: color 250ms var(--cubic);
 }
@@ -739,7 +741,7 @@ img {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: calc(26 / 16);
 
   padding: 6px 22px;
   text-align: center;
@@ -832,7 +834,7 @@ img {
 
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: calc(28 / 18);
 
   padding: 63px 24px;
 }
@@ -848,7 +850,7 @@ img {
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 
   margin-bottom: 4px;
@@ -858,7 +860,7 @@ img {
   color: var(--primary-text-color);
 
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
 }
 
 /* Вместо этого - Техника отзывчивых изображений
